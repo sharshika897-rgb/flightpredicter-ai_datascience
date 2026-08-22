@@ -2,7 +2,7 @@
 
 ## AI Travel Analyst for Flight Price Analysis and Prediction
 
-Flight AI is a data-driven flight price analysis and prediction project developed as part of the Data Science and Visualisation track.
+Flight AI is a datadriven flight price analysis and prediction project developed as part of the Data Science and Visualisation track.
 
 The project explores the factors associated with flight prices and uses machine learning to predict flight prices based on flight characteristics, travel conditions, and booking information.
 
@@ -14,7 +14,7 @@ The project also includes a Cheapest Booking Time Analysis to help travelers ide
 
 Flight prices vary depending on several factors such as airline, travel class, route, distance, number of stops, season, and how far in advance the ticket is booked.
 
-The objective of FlightWise AI is to analyze these factors using the provided flight dataset and develop a machine learning model capable of predicting flight prices.
+The objective of Flight AI is to analyze these factors using the provided flight dataset and develop a machine learning model capable of predicting flight prices.
 
 The project consists of:
 
@@ -79,27 +79,27 @@ The dataset contains both numerical and categorical variables and includes missi
 The project follows the following workflow:
 
 Dataset
-↓
+
 Data Inspection
-↓
+
 Data Cleaning
-↓
+
 Feature Engineering
-↓
-Exploratory Data Analysis
-↓
+
+Data Analysis
+
 Train/Test Split
-↓
+
 Feature Preprocessing
-↓
+
 Machine Learning Model
-↓
+
 Model Evaluation
-↓
+
 Feature Importance
-↓
+
 Cheapest Booking Time Analysis
-↓
+
 Interactive Application
 
 ---
@@ -164,7 +164,7 @@ First Class had the highest average observed fare, followed by Business and Prem
 
 Flights with more stops showed higher average observed prices in this dataset.
 
-Non-stop flights had the lowest average price among the three observed stop categories.
+Nonstop flights had the lowest average price among the three observed stop categories.
 
 ### 7.4 Distance vs Price
 
@@ -206,10 +206,9 @@ Final model results will be added after model evaluation is completed.
 
 ## 9. Model Results
 
-| Model | MAE | RMSE | R² |
-|---|---:|---:|---:|
-| Linear Regression | ₹23,858.63 | ₹52,668.19 | 0.5547 |
-| Random Forest | ₹15,593.06 | ₹49,182.55 | 0.6117 |
+ Model  MAE  RMSE  R² 
+ Linear Regression  ₹23,858.63  ₹52,668.19  0.5547 
+ Random Forest  ₹15,593.06  ₹49,182.55  0.6117 
 
 Random Forest was selected as the final model because it outperformed the Linear Regression baseline across all three evaluation metrics.
 
@@ -305,7 +304,7 @@ This allowed model improvement to be measured rather than selecting a complex mo
 Possible future improvements include:
 
 - More extensive hyperparameter tuning
-- Additional route-level features
+- Additional route level features
 - Advanced model explainability using SHAP
 - More detailed price forecasting
 - Real-time flight data integration
@@ -316,7 +315,18 @@ Possible future improvements include:
 
 ## 15. Screenshots
 
-Screenshots of the exploratory analysis and Streamlit application will be added here.
+<img width="2971" height="1765" alt="season_vs_price" src="https://github.com/user-attachments/assets/fd9d6e45-c5ed-42b1-8788-cadf05924f0d" />
+<img width="3271" height="1765" alt="booking_window_vs_price" src="https://github.com/user-attachments/assets/f76bdf00-0866-4980-83ee-98eddfb42f55" />
+<img width="2970" height="1765" alt="distance_vs_price" src="https://github.com/user-attachments/assets/d902d873-4d56-40b3-850d-2e6867e4630b" />
+<img width="2971" height="1765" alt="stops_vs_price" src="https://github.com/user-attachments/assets/829b5d53-e370-46a0-9188-ef5b69a06844" />
+<img width="2971" height="1765" alt="travel_class_vs_price" src="https://github.com/user-attachments/assets/72dc6b35-8529-48f1-8424-72d287d1e022" />
+<img width="3571" height="1765" alt="airline_vs_price" src="https://github.com/user-attachments/assets/155b3fdb-37d0-40a6-954e-74b9838fbddb" />
+
+
+
+
+
+
 
 ---
 
@@ -325,5 +335,5 @@ Screenshots of the exploratory analysis and Streamlit application will be added 
 Clone the repository:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/flightwise-ai.git
-cd flightwise-ai
+git clone https://github.com/YOUR_USERNAME/flightpredicter-ai.git
+cd flightpredicter-ai
