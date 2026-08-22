@@ -204,44 +204,30 @@ Final model results will be added after model evaluation is completed.
 
 ---
 
-## 9. Model Evaluation
+## 9. Model Results
 
-The models are evaluated using:
+| Model | MAE | RMSE | R² |
+|---|---:|---:|---:|
+| Linear Regression | ₹23,858.63 | ₹52,668.19 | 0.5547 |
+| Random Forest | ₹15,593.06 | ₹49,182.55 | 0.6117 |
 
-### Mean Absolute Error (MAE)
+Random Forest was selected as the final model because it outperformed the Linear Regression baseline across all three evaluation metrics.
 
-Measures the average absolute difference between predicted and actual prices.
+The Random Forest reduced MAE by approximately 34.6% compared with the baseline and increased the R² score from 0.5547 to 0.6117.
+## 10. Feature Importance
 
-### Root Mean Squared Error (RMSE)
+The Random Forest feature-importance analysis identified the following major predictive features:
 
-Measures prediction error while giving greater weight to larger errors.
+1. Duration_Minutes - 51.60%
+2. Distance_km - 15.83%
+3. Travel_Class_Economy - 8.77%
+4. Days_Before_Departure - 5.26%
+5. Travel_Class_Business - 1.72%
+6. Travel_Class_First - 1.71%
 
-### R² Score
+Duration and distance together account for approximately 67.4% of the model's feature importance.
 
-Measures the proportion of variance in flight prices explained by the model.
-
-The final model will be selected based on test-set performance and practical interpretability.
-
----
-
-## 10. Cheapest Booking Time Analysis
-
-The project analyzes flight prices across different booking windows:
-
-- 0–7 days
-- 8–14 days
-- 15–30 days
-- 31–60 days
-- 61–90 days
-- 91–180 days
-
-The analysis indicates that booking closer to departure is associated with higher observed prices in the supplied dataset.
-
-The 91–180 day window had the lowest observed average fare among the available booking windows.
-
-This result represents an observed relationship in the dataset and should not be interpreted as a guarantee of future ticket prices.
-
----
+Feature importance represents the model's predictive behavior and should not be interpreted as causal influence.
 
 ## 11. Technologies Used
 
